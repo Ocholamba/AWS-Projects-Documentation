@@ -1,0 +1,11 @@
+# Day 24: Application Modernization Project
+
+**Goal:** To choose a monolithic application and propose a microservices architecture and how to implement it in AWS.
+
+**Solution:** I analyzed a monolithic e-commerce application, and I proposed a microservices architecture for that application. I also defined the different technologies and services that I would use for each component.
+
+**AWS Services Used:** ECS, Lambda, DynamoDB, RDS, API Gateway, SQS
+
+**Key Learnings:** I learned how to analyze a monolithic application and how to break it down into smaller and independent microservices. I am now able to design a microservices architecture using AWS services, and I understand the benefits and challenges of this approach.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

@@ -1,0 +1,11 @@
+# Day 18: Content Delivery with CloudFront and WAF
+
+**Goal:** To secure your CloudFront distribution by implementing a Web Application Firewall (WAF) with common rule sets.
+
+**Solution:** I created a Web Application Firewall (WAF) and associated it with my CloudFront distribution using common rules for SQL injection and other common attacks.
+
+**AWS Services Used:** `CloudFront`, `WAF`
+
+**Key Learnings:** I learned how to configure WAF to protect my application, and how to apply it to a CloudFront distribution. I now understand the importance of using a Web Application Firewall to protect from attacks in a production environment.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

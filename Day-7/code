@@ -1,0 +1,53 @@
+# Buildspec
+
+   version: 0.2
+
+   phases:
+     install:
+       runtime-versions:
+           nodejs: 16
+     build:
+       commands:
+         - echo "Build started on `date`"
+         - echo "Installing zip"
+         - apt-get update
+         - apt-get install -y zip
+         - echo "Zipping folder"
+         - zip -r my-web-app.zip *
+     post_build:
+       commands:
+          - echo "Build finished on `date`"
+   artifacts:
+     files:
+       - my-web-app.zip
+
+
+# Appspec
+
+version: 0.0
+os: linux
+files:
+  - source: my-web-app.zip
+    destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: scripts/delete_files.sh
+      timeout: 300
+      runas: ubuntu
+  AfterInstall:
+    - location: scripts/unzip.sh
+      timeout: 300
+      runas: ubuntu
+
+### Scripts
+# delete.sh
+
+ #!/bin/bash
+ cd /var/www/html
+ rm -rf *
+
+# unzip.sh
+
+ #!/bin/bash
+ cd /var/www/html
+ unzip -o my-web-app.zip

@@ -1,0 +1,11 @@
+# Day 25: Centralized Log Management with CloudWatch Logs and Subscriptions
+
+**Goal:** To configure CloudWatch Logs to centralize logs from different AWS resources and implement log subscriptions to deliver logs to other AWS services.
+
+**Solution:** I created a centralized log group, and I created subscription filters to send the log messages from other log groups to it.
+
+**AWS Services Used:** CloudWatch Logs, Log Subscriptions
+
+**Key Learnings:** I learned how to configure and implement a centralized log solution using CloudWatch Logs, and how to filter the events using the subscription filters.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

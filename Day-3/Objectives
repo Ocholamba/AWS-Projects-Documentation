@@ -1,0 +1,11 @@
+# Day 3: Load Balancing Web App with Auto Scaling
+
+**Goal:** To expand the EC2 app deployment to use an Application Load Balancer and an Auto Scaling Group.
+
+**Solution:** I created a Launch Template for my EC2 instances, then I created an Auto Scaling group using it, and I configured an Application Load Balancer to distribute the traffic between the instances.
+
+**AWS Services Used:** EC2, ALB, Auto Scaling, Launch Templates
+
+**Key Learnings:** I learned how to configure Auto Scaling Groups, Launch Templates, and Application Load Balancers to build a highly available and scalable application.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

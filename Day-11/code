@@ -1,0 +1,29 @@
+[general]
+ state_file = /var/awslogs/state/awslogs.state
+[/var/log/httpd/access_log]
+ file = /var/log/httpd/access_log
+ log_group_name = /var/log/httpd/access_log
+ log_stream_name = {instance_id}
+ datetime_format = %d/%b/%Y:%H:%M:%S %z
+
+
+ # JSON file
+
+ {
+      "agent": {
+        "metrics_collected": {
+          "collect_cpu": false,
+          "collect_disk": false,
+          "collect_mem": false,
+          "collect_net": false
+          }
+         },
+          "logs": {
+            "access_log":{
+              "log_group_name":"/var/log/httpd/access_log",
+              "log_stream_name":"{instance_id}",
+              "file":"/var/log/httpd/access_log",
+              "timezone": "UTC"
+             }
+           }
+        }

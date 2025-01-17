@@ -1,0 +1,11 @@
+# Day 4: Virtual Private Cloud (VPC) Setup with Subnets
+
+**Goal:** To create a custom VPC with public and private subnets and configure a NAT Gateway for private subnet internet access.
+
+**Solution:** I created a custom VPC with public and private subnets, an Internet Gateway for public subnet access, and a NAT Gateway for private subnets to reach the internet.
+
+**AWS Services Used:** VPC, Subnets, NAT Gateway, Internet Gateway, Route Tables
+
+**Key Learnings:** I learned how to create a custom VPC, public and private subnets, and how to configure the route tables to enable internet access to instances in the public subnets, and secure internet access for the private subnets via a NAT gateway.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

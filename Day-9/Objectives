@@ -1,0 +1,11 @@
+# Day 9: Containerized Application on ECS (Fargate)
+
+**Goal:** To package a simple application in a Docker container and deploy it on ECS using Fargate.
+
+**Solution:** I created a simple web app and packaged it in a docker container. Then I created an ECR repository and uploaded the image there. Finally, I created an ECS cluster with Fargate and deployed the application on it.
+
+**AWS Services Used:** Docker, ECR, ECS, Fargate
+
+**Key Learnings:** I learned how to containerize an application using Docker, how to store container images in ECR, and how to run serverless containers with ECS Fargate.
+
+**Challenges and Solutions:** I had problems with the linux/amd64 architecture and had to use the command to fix the error. I also learned that the ecsTaskExecutionRole is not meant to be used as the taskRole and that I should be using a separate role for that.

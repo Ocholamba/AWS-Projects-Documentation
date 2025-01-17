@@ -1,0 +1,36 @@
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+import sagemaker
+from sagemaker import get_execution_role
+import boto3
+from sklearn.preprocessing import StandardScaler
+
+region = boto3.Session().region_name
+sagemaker_session = sagemaker.Session()
+bucket = '<your-s3-bucket-name>'
+prefix = 'sagemaker/ml-model'
+role = get_execution_role()
+s3_data_uri = f"s3://{bucket}/{prefix}/data.csv"
+
+df = pd.read_csv(s3_data_uri)
+df = df.drop(columns=['name'])
+X = df.drop(columns=['target'])
+y = df['target']
+
+scaler = StandardScaler()
+X = scaler.fit_transform(X)
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+model = LogisticRegression(max_iter=1000)
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuracy: {accuracy}")
+s3 = boto3.client('s3')
+with open('model.pkl', 'wb') as f:
+  pickle.dump(model, f)
+s3.upload_file('model.pkl', bucket, f'{prefix}/model.pkl')
+print(f"Model was saved in S3 bucket: {bucket}")

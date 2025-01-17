@@ -1,0 +1,8 @@
+  {
+    "Properties": {
+      "destinationArn": "arn:aws:logs:us-east-1:123456789012:log-group:central-log-group",
+      "filterPattern": "[timestamp=* , request_id=*]",
+      "logGroupName": "/aws/lambda/my-lambda-function",
+      "roleArn": "arn:aws:iam::123456789012:role/aws-lambda-basic-execution"
+   }
+  }

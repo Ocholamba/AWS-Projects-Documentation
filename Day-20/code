@@ -1,0 +1,26 @@
+# IAM Policy
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+      {
+          "Action": [
+              "securityhub:BatchUpdateFindings",
+               "securityhub:DescribeActionTargets",
+               "securityhub:DescribeHub",
+                "securityhub:DescribeOrganizationConfiguration",
+              "securityhub:EnableOrganizationAdminAccount",
+              "securityhub:GetEnabledStandards",
+              "securityhub:GetFindings",
+              "securityhub:GetInsights",
+              "securityhub:ListEnabledProductsForImport",
+                "securityhub:ListInsights",
+                "securityhub:ListMembers",
+              "securityhub:UpdateHub"
+
+          ],
+          "Effect": "Allow",
+          "Resource": "*"
+      }
+    ]
+}

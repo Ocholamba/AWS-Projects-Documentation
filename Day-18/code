@@ -1,0 +1,19 @@
+json
+{
+  "Name": "AWS-AWSManagedRulesCommonRuleSet",
+    "Priority": 1,
+    "Statement": {
+         "ManagedRuleGroupIdentifier": {
+          "Name": "AWSManagedRulesCommonRuleSet",
+          "VendorName": "AWS"
+          }
+      },
+      "Action": {
+         "Block": {}
+       },
+ "VisibilityConfig": {
+        "SampledRequestsEnabled": true,
+        "CloudWatchMetricsEnabled": true,
+       "MetricName": "AWS-AWSManagedRulesCommonRuleSet"
+      }
+}

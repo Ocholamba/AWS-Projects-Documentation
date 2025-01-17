@@ -1,0 +1,11 @@
+# Day 29: Data Analysis with QuickSight
+
+**Goal:** To connect your data in S3 or another data source and create a dashboard with different visualizations of your data.
+
+**Solution:** I used QuickSight to visualize a dataset in S3 by creating different charts and combining them into a dashboard.
+
+**AWS Services Used:** S3, QuickSight
+
+**Key Learnings:** I learned how to connect QuickSight to an S3 bucket and how to create charts and dashboards using different kinds of visualizations.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

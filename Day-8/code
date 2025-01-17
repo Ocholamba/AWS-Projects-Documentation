@@ -1,0 +1,24 @@
+{
+  "Properties": {
+      "ActionsEnabled": true,
+      "AlarmActions": [
+          "arn:aws:sns:us-east-1:123456789012:my-sns-topic"
+      ],
+      "AlarmDescription": "Alarm when CPU Utilization is greater than 80%",
+      "AlarmName": "ec2-cpu-high-alarm",
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "Dimensions": [
+          {
+              "Name": "InstanceId",
+              "Value": "i-0abcdefg12345678"
+          }
+      ],
+      "EvaluationPeriods": 1,
+      "MetricName": "CPUUtilization",
+      "Namespace": "AWS/EC2",
+      "Period": 300,
+      "Statistic": "Average",
+      "Threshold": 80,
+      "TreatMissingData": "notBreaching"
+  }
+}

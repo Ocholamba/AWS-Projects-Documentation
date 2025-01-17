@@ -1,0 +1,11 @@
+# Day 13: Serverless Data Processing with Lambda & SQS
+
+**Goal:** To design a solution where a Lambda function processes messages from an SQS queue to transform data.
+
+**Solution:** I configured an SQS queue, and then I set up a Lambda function that is triggered by the queue, receives the messages, transforms the data, and logs it.
+
+**AWS Services Used:** Lambda, SQS
+
+**Key Learnings:** I learned how to create an event-driven serverless application using SQS and Lambda, and how to pass information from one service to the other.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

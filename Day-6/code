@@ -1,0 +1,21 @@
+# IAM Policy
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:us-east-1:123456789012:log-group:*"
+        },
+      {
+       "Effect": "Allow",
+       "Action": "s3:GetObject",
+       "Resource": "arn:aws:s3:::my-bucket-name/*"
+     }
+    ]
+}

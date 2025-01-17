@@ -1,0 +1,18 @@
+# Lambda function
+
+    import json
+    import logging
+
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+
+    def lambda_handler(event, context):
+        logger.info(f"Starting lambda function")
+        logger.info(f"IoT data received: {json.dumps(event)}")
+        message = event.get("message", "no message was received")
+        logger.info(f"Data received: {message}")
+        logger.info(f"Ending lambda function")
+        return {
+            'statusCode': 200,
+            'body': 'Lambda function completed'
+        }

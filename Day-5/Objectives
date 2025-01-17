@@ -1,0 +1,11 @@
+# Day 5: Database Setup with RDS
+
+**Goal:** To deploy a database instance (e.g., MySQL, PostgreSQL) using RDS, configure backups, and security settings.
+
+**Solution:** I created a database instance using RDS with MySQL, configured backups, and set up a basic security group to allow traffic to it.
+
+**AWS Services Used:** RDS, Security Groups
+
+**Key Learnings:** I learned how to create a managed relational database using RDS, and how to configure security settings for the database instance.
+
+**Challenges and Solutions:** I learned that opening public access to RDS instances is not a good practice, and it is better to access it from within the VPC.

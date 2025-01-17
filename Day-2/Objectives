@@ -1,0 +1,11 @@
+# Day 2: Static Website on S3 with CloudFront CDN
+
+**Goal:** To host a static website on S3, configure it for public access, and use CloudFront for content delivery.
+
+**Solution:** I configured an S3 bucket to host my static website and then set up CloudFront to serve this content globally with low latency. This allowed me to deliver a website without having to manage a server.
+
+**AWS Services Used:** S3, CloudFront, Route 53
+
+**Key Learnings:** I learned how to configure an S3 bucket for static website hosting, and how to use CloudFront to distribute the content globally.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

@@ -1,0 +1,11 @@
+# Day 16: Multi-Region Deployment for High Availability
+
+**Goal:** To deploy your web application in multiple AWS regions, using Route 53 for latency-based routing and Global Accelerator for traffic management.
+
+**Solution:** I deployed my web application in two different AWS regions, and then I configured Route 53 to route the traffic based on the latency, so the users are sent to the closest instance. I then created a Global Accelerator to give a central entrypoint to users.
+
+**AWS Services Used:** EC2, Route 53, Global Accelerator
+
+**Key Learnings:** I learned how to implement a multi-region deployment, and how to use Route 53 and Global Accelerator for latency-based routing.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

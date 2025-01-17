@@ -1,0 +1,11 @@
+# Day 12: Data Analytics & Processing with S3 and Athena
+
+**Goal:** To upload a dataset to S3 and use Athena to run queries on it.
+
+**Solution:** I created an S3 bucket to store the data and configured an Athena table over the data in order to query it with SQL.
+
+**AWS Services Used:** `S3`, `Athena`
+
+**Key Learnings:** I learned how to store data in S3, and how to query the data using a serverless query engine like Athena.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

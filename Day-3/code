@@ -1,0 +1,8 @@
+# User data
+
+#!/bin/bash
+  yum update -y
+  yum install -y httpd
+  systemctl enable httpd
+  systemctl start httpd
+  echo "<html><head><title>My Simple Web App</title></head><body><h1>Hello from EC2!</h1><p>This is a web application running behind an ALB.</p></body></html>" > /var/www/html/index.html

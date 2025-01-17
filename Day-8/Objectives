@@ -1,0 +1,11 @@
+# Day 8: Cost Monitoring and Optimization with CloudWatch and Budgets
+
+**Goal:** To set up CloudWatch alarms for resource utilization and create budgets to track spending. Configure a report on cost per service using Cost Explorer.
+
+**Solution:** I configured CloudWatch alarms to monitor CPU usage of an EC2 instance, set an AWS budget to track spending, and I used Cost Explorer to track cost per service.
+
+**AWS Services Used:** CloudWatch, AWS Budgets, Cost Explorer
+
+**Key Learnings:** I learned how to use CloudWatch for resource monitoring, how to create notifications, and how to use AWS Budgets to control spending, and how to track costs per service.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

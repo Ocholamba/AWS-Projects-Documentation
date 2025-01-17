@@ -1,0 +1,15 @@
+# Day 23: Mobile Backends with Amplify
+
+**Goal:** To set up a basic mobile backend using AWS Amplify, integrating user authentication, data storage, and APIs.
+
+**Solution:** I set up a basic mobile backend using Amplify, adding authentication with Cognito, and data storage using DynamoDB and a GraphQL API.
+
+**AWS Services Used:** Amplify, Cognito, DynamoDB, API Gateway
+
+**Key Learnings:** I learned how to set up a mobile backend using the Amplify framework, and how to configure authentication and a GraphQL API.
+
+**Challenges and Solutions:**
+
+The Amplify CLI was raising a problem when scanning a folder, I solved it by changing the permission of the folder.
+
+The Amplify CLI was not able to write in the configuration folder, but I was able to fix it by modifying the user permissions of that folder.

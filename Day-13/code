@@ -1,0 +1,27 @@
+# lambda function
+
+    import json
+    import logging
+
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+
+    def lambda_handler(event, context):
+        for record in event['Records']:
+            message_body = record['body']
+            try:
+                data = json.loads(message_body)
+                # Perform data transformation
+                transformed_data = {
+                    "id": data.get("id"),
+                    "transformed_value": data.get("value", "").upper(),
+                    "original_value": data.get("value")
+                }
+                logger.info(f"Transformed data: {transformed_data}")
+            except Exception as e:
+                logger.error(f"Error processing message: {message_body} Error: {e}")
+
+        return {
+            'statusCode': 200,
+            'body': 'Lambda function completed'
+        }

@@ -1,0 +1,11 @@
+# Day 1: Simple Web App Deployment on EC2
+
+**Goal:** To deploy a basic static website using an EC2 instance, using user data to configure the server.
+
+**Solution:** I launched an EC2 instance and used the User Data feature to automatically install the Apache web server and deploy a basic static website. This was done during the instance creation process, avoiding the need to manually configure the server after launch.
+
+**AWS Services Used:** `EC2`, `User Data`, `Security Groups`
+
+**Key Learnings:** I learned how to use user data to automate instance configuration. I also learned how to deploy a basic web application using EC2.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

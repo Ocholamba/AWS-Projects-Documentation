@@ -1,0 +1,15 @@
+# Day 10: Serverless Web API with API Gateway and Lambda
+
+**Goal:** To create a simple API using API Gateway and a Lambda function that retrieves data from a DynamoDB database.
+
+**Solution:** I created a DynamoDB table, a Lambda function that reads data from the table, and an API Gateway endpoint to expose the Lambda function as an API.
+
+**AWS Services Used:** API Gateway, Lambda, DynamoDB
+
+**Key Learnings:** I learned how to integrate API Gateway with Lambda, how to create a basic Lambda function with Python, and how to read data from DynamoDB.
+
+**Challenges and Solutions:**
+
+I had problems with IAM permissions as the Lambda function was not able to access the DynamoDB table. I fixed it by adding AmazonDynamoDBFullAccess to the Lambda's role, but it should be more fine grained for a production environment.
+
+I also had issues with the authentication when accessing the API endpoint directly. I fixed it by disabling authentication in the Lambda Function URL.

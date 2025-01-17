@@ -1,0 +1,15 @@
+# Day 28: Machine Learning with SageMaker (Basic)
+
+**Goal:** To train a simple ML model using SageMaker Studio, and then use SageMaker hosting to provide a prediction endpoint.
+
+**Solution:** I created a Machine Learning model using scikit-learn in a SageMaker Studio notebook, and then I saved it to S3. Then I tried to create a SageMaker endpoint to expose the model using a Docker image but there were issues with the definition.
+
+**AWS Services Used:** SageMaker Studio, SageMaker Hosting, S3
+
+**Key Learnings:** I learned how to use SageMaker Studio to train a model, and how to configure and save a Machine Learning model using Python and scikit-learn.
+
+**Challenges and Solutions:**
+
+I had issues with the botocore version and with how the library is used, and I was getting a TypeError: 'bytes' object is not callable error, which I was not able to fix completely.
+
+I also had problems with the SageMaker model definition, as it requires the image to be a single architecture, and I was not able to solve this issue.

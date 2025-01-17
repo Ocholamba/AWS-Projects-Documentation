@@ -1,0 +1,17 @@
+# Day 7: CI/CD Pipeline with GitHub, CodeBuild & CodeDeploy
+
+**Goal:** To set up a simple CI/CD pipeline to automatically deploy changes to your EC2 application.
+
+**Solution:** I created a CI/CD pipeline with GitHub for source control, CodeBuild for building the project, and CodeDeploy to deploy the application to an EC2 instance. This was made after the discovery that CodeCommit is not available for new accounts, that is why GitHub was used as the source provider.
+
+**AWS Services Used:** GitHub, CodeBuild, CodeDeploy, EC2
+
+**Key Learnings:** I learned how to set up a basic CI/CD pipeline with GitHub, CodeBuild, and CodeDeploy. I now understand the importance of a CI/CD pipeline and how it enables a faster, more secure, and more reliable deployment process.
+
+**Challenges and Solutions:**
+
+I had problems with the installation of the CodeDeploy agent on the EC2 instance because the instructions were for another linux distribution. I corrected it by using the correct instructions for Amazon Linux.
+
+I had problems with IAM permissions of the EC2 instance, as the deploy agent needed to have the proper permissions to access the AWS resources. I fixed it by creating a custom role that allowed CodeDeploy to work correctly.
+
+CodeDeploy was having issues because of file overwrite conflicts in the /var/www/html directory. I fixed it by adding a BeforeInstall hook to delete the old files in the destination folder.

@@ -1,0 +1,11 @@
+# Day 26: Media Processing with MediaConvert
+
+**Goal:** To use AWS MediaConvert to transcode video files from one format to another and store them on S3.
+
+**Solution:** I created a MediaConvert job and configured the source video and the destination S3 bucket for the converted file.
+
+**AWS Services Used:** MediaConvert, S3
+
+**Key Learnings:** I learned how to configure and use MediaConvert to transcode videos, and how easy it is to do it in a serverless way.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

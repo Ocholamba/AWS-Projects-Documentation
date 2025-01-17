@@ -1,0 +1,11 @@
+# Day 6: IAM Roles & Policies for Secure Access
+
+**Goal:** To create custom IAM roles and policies to grant specific permissions to different services, following the principle of least privilege.
+
+**Solution:** I created custom IAM policies for CloudWatch Logs and S3 access, and created an IAM role for a Lambda function that can assume these policies.
+
+**AWS Services Used:** IAM Roles, IAM Policies
+
+**Key Learnings:** I learned how to create IAM roles and policies following the principle of least privilege, and I also realized the importance of setting resource-based policies.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

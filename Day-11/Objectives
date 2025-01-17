@@ -1,0 +1,13 @@
+# Day 11: Monitoring & Logging with CloudWatch Logs & X-Ray
+
+**Goal:** To configure CloudWatch Logs to collect logs from your EC2 application and use X-Ray to trace API requests.
+
+**Solution:** I installed and configured the CloudWatch agent to send the web server logs to CloudWatch Logs. Then, I enabled X-Ray to track the requests in my serverless API.
+
+**AWS Services Used:** CloudWatch Logs, X-Ray, EC2, Lambda, API Gateway
+
+**Key Learnings:** I learned how to configure the CloudWatch agent, and how to use X-Ray to trace API requests. I now understand the importance of monitoring and logging to debug problems faster.
+
+**Challenges and Solutions:**
+
+The previous version of the CloudWatch agent is awslogs, but now it is amazon-cloudwatch-agent. I was able to fix it by changing the installation commands.

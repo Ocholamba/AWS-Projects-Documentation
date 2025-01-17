@@ -1,0 +1,12 @@
+{
+"Name": "my-record",
+"Type": "A",
+"Region": "us-east-1",
+ "GeoLocation": {
+   "CountryCode": "US"
+ },
+ "Weight": 100,
+"Values": [
+       "<your-load-balancer-ip>"
+     ]
+}

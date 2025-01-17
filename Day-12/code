@@ -1,0 +1,4 @@
+# SQL query
+
+sql
+    SELECT * FROM "my_athena_db"."my_athena_table" LIMIT 10

@@ -1,0 +1,23 @@
+# IAM Policy
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+      {
+          "Effect": "Allow",
+          "Action": [
+              "backup:CreateBackupPlan",
+              "backup:CreateBackupSelection",
+              "backup:StartBackupJob",
+              "backup:ListBackupVaults",
+              "backup:ListRecoveryPointsByBackupVault",
+              "backup:DescribeRecoveryPoint",
+              "backup:StartRestoreJob",
+              "backup:DescribeRestoreJob",
+             "ec2:DescribeInstances",
+              "rds:DescribeDBInstances"
+          ],
+          "Resource": "*"
+      }
+   ]
+}

@@ -1,0 +1,11 @@
+# Day 15: Implementing a Backup & Disaster Recovery Strategy
+
+**Goal:** To design a backup and recovery strategy for your EC2 application and database using AWS Backup and S3.
+
+**Solution:** I configured a backup plan with AWS backup, associated the resources to it, and tested restoring them to a new instance.
+
+**AWS Services Used:** AWS Backup, EC2, RDS, S3
+
+**Key Learnings:** I learned how to use AWS Backup to create backups of different resources, and how to restore those resources if needed.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

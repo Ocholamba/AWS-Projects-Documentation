@@ -1,0 +1,11 @@
+# Day 17: Event-Driven Architecture with EventBridge and Lambda
+
+**Goal:** To create an architecture where an event (e.g., uploading a file to S3) triggers a Lambda function via EventBridge.
+
+**Solution:** I configured an S3 bucket to trigger an EventBridge rule, and I created a Lambda function that receives the event from EventBridge and processes the data.
+
+**AWS Services Used:** EventBridge, Lambda, S3
+
+**Key Learnings:** I learned how to configure EventBridge rules to trigger different actions, and how to send data to a Lambda function through EventBridge.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

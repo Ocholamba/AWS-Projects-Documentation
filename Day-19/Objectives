@@ -1,0 +1,11 @@
+# Day 19: Migration Scenario
+
+**Goal:** To simulate the migration of an on-premises application to AWS, identifying the services for the application, storage, and database, including tools for such task.
+
+**Solution:** I designed a migration plan for a monolithic application, identified the AWS services that can replace the components of that application, and listed the tools that can help on this migration process.
+
+**AWS Services Used:** EC2, RDS, S3, ECS, SMS, DMS, ADS, AWS CLI
+
+**Key Learnings:** I learned how to plan a migration using different strategies, and also the value of having a well defined plan. I also learned how the different services interact with each other and which services are more useful for specific scenarios.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

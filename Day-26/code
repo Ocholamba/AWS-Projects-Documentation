@@ -1,0 +1,38 @@
+{
+  "Settings": {
+    "OutputGroups": [
+      {
+        "Name": "my-output-group",
+        "Outputs": [
+          {
+            "Preset": "System-Avc_1080p_30_16x9_16mbps",
+            "NameModifier": "_converted"
+          }
+        ],
+          "OutputGroupSettings": {
+            "Type": "FILE_GROUP_SETTINGS",
+            "FileGroupSettings": {
+               "Destination": "s3://your-destination-bucket/"
+               }
+              }
+          }
+        ],
+      "Inputs": [
+          {
+            "AudioSelectors": {
+                "Audio Selector 1": {
+                  "Offset": 0,
+                  "DefaultSelection": "DEFAULT",
+                "ProgramSelection": 1
+          }
+      },
+            "VideoSelector": {
+              "ColorSpace": "FOLLOW"
+            },
+            "FileInput": "s3://your-source-bucket/your_file.mp4"
+      }
+    ],
+    "TimecodeConfig": {
+      "Source": "ZEROBASED"
+    }
+ }

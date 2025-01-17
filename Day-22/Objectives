@@ -1,0 +1,21 @@
+# Day 22: Serverless Image Processing with Lambda and S3
+
+**Goal:** To create a serverless solution that uses a Lambda function triggered by S3 events to process images (e.g., resizing, thumbnail generation) and store them back in S3.
+
+**Solution:** I configured an S3 bucket to trigger a Lambda function to process an image, resize it and upload it to a different S3 bucket.
+
+**AWS Services Used:** S3, Lambda
+
+**Key Learnings:** I learned how to configure Lambda to be triggered by S3 events, and I learned how to perform image processing in a serverless environment.
+
+**Challenges and Solutions:**
+
+I initially had problems with the dependencies for the Pillow library, and after several attempts I found out that I had to specify the platform in the pip installation command.
+
+I also had problems with the lambda being timed out. I solved it by setting the timeout value of the lambda to a higher value.
+
+I had a problem with the key Records not being present, but that was because I was testing it with the incorrect test event. I had to create a test event to fix it.
+
+I was also getting a validation error for the bucket name, and it was fixed by not passing the ARN of the bucket but its name.
+
+I had a problem with the images not being processed correctly, and I fixed it by converting all images to the RGB format before processing it.

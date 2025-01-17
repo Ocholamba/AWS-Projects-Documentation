@@ -1,0 +1,11 @@
+# Day 21: IoT Solution
+
+**Goal:** To simulate a simple IoT device sending data to AWS IoT Core and triggering a Lambda function.
+
+**Solution:** I created an IoT thing in AWS, configured a policy and a role for it, and then created an IoT rule that triggers a Lambda function to process the data sent by a simulated device.
+
+**AWS Services Used:** AWS IoT Core, Lambda
+
+**Key Learnings:** I learned how to create an IoT device and how to receive messages in a serverless function using AWS IoT Core.
+
+**Challenges and Solutions:** There were no particular challenges with this project.

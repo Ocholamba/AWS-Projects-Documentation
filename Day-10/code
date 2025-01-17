@@ -1,0 +1,20 @@
+# Lambda function code
+
+import json
+import boto3
+
+dynamodb = boto3.client('dynamodb')
+table_name = 'my-api-data'
+
+def lambda_handler(event, context):
+    response = dynamodb.scan(TableName=table_name)
+    items = response['Items']
+    formatted_items = []
+    for item in items:
+        formatted_item = {k: list(v.values())[0] for k, v in item.items()}
+        formatted_items.append(formatted_item)
+
+    return {
+        'statusCode': 200,
+        'body': json.dumps(formatted_items)
+    }
