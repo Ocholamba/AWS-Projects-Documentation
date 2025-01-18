@@ -6,6 +6,10 @@ This repository contains the documentation and code for my 30-day AWS Solutions 
 
 This challenge helped me to enhance my understanding of AWS core services, as well as more advanced topics such as machine learning, media processing, and security.
 
+## Contact
+
+https://www.linkedin.com/in/o-ibeh/  Ibehonyedikachi5@gmail.com  
+
 ## Projects
 
 Here is a list of all the projects that were completed:
