@@ -17,7 +17,7 @@ Here is a list of all the projects that were completed:
 *   [Day 5: Database Setup with RDS](https://github.com/Ocholamba/AWS-Projects-Documentation/tree/38c32d7dcce1303597d8f31855dae276dcda1b27/Day-5)
 *   [Day 6: IAM Roles & Policies for Secure Access](https://github.com/Ocholamba/AWS-Projects-Documentation/tree/38c32d7dcce1303597d8f31855dae276dcda1b27/Day-6)
 *   [Day 7: CI/CD Pipeline with GitHub, CodeBuild & CodeDeploy](https://github.com/Ocholamba/AWS-Projects-Documentation/tree/38c32d7dcce1303597d8f31855dae276dcda1b27/Day-7)
-*   [Day 8: Cost Monitoring and Optimization with CloudWatch and Budgets](https://github.com/Ocholamba/AWS-Projects-Documentation/tree/38c32d7dcce1303597d8f31855dae276dcda1b27/Day-8))
+*   [Day 8: Cost Monitoring and Optimization with CloudWatch and Budgets](https://github.com/Ocholamba/AWS-Projects-Documentation/tree/38c32d7dcce1303597d8f31855dae276dcda1b27/Day-8)
 *   [Day 9: Containerized Application on ECS (Fargate)](https://github.com/Ocholamba/AWS-Projects-Documentation/tree/38c32d7dcce1303597d8f31855dae276dcda1b27/Day-9)
 *   [Day 10: Serverless Web API with API Gateway and Lambda](https://github.com/Ocholamba/AWS-Projects-Documentation/tree/38c32d7dcce1303597d8f31855dae276dcda1b27/Day-10)
 *   [Day 11: Monitoring & Logging with CloudWatch Logs & X-Ray](https://github.com/Ocholamba/AWS-Projects-Documentation/tree/38c32d7dcce1303597d8f31855dae276dcda1b27/Day-11)
